@@ -7,7 +7,7 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
   <title>Device Commander · Instalación segura</title>
   <link rel="stylesheet" href="./style.css">
-  <script src="./setup.js?v=3" defer></script>
+  <script src="./setup.js?v=4" defer></script>
 </head>
 <body>
   <main class="shell">
@@ -25,8 +25,8 @@
       <a id="pair" class="button secondary disabled" aria-disabled="true" tabindex="-1">Abrir invitación · Open pairing invitation</a>
       <p class="detail" id="pair-status" role="status">Comprobando invitación…</p>
     </section>
-    <p class="notice">La vinculación requiere confirmación en este teléfono. Puedes detener el soporte cuando quieras. No compartas el código QR con otras personas.</p>
-    <p class="english">Install the signed app, return to this page, and tap the pairing button. The phone owner must approve. A single-use invite expires automatically.</p>
+    <p class="notice">La vinculación requiere confirmación en este teléfono y acceso autorizado a la red privada del propietario. Sin esa conexión, la aplicación se instala pero aún no puede vincularse. No compartas el código QR.</p>
+    <p class="english">Install the signed app and return to this page to pair. Pairing currently requires authorized access to the owner’s private network. Without it, installation works but remote connection does not. The phone owner must approve.</p>
   </main>
 </body>
 </html>
