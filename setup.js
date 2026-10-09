@@ -36,9 +36,12 @@
     .then((data) => {
       if (data.product !== "Device Commander" || data.platform !== "android" || data.channel !== "stable" ||
           !/^\d+\.\d+\.\d+$/.test(data.version) || !/^[a-f0-9]{64}$/i.test(data.sha256) ||
-          data.apk !== "DeviceCommander-Android.apk") throw new Error("invalid");
+          data.apk !== "DeviceCommander-Android-" + data.version + ".apk") throw new Error("invalid");
       release.textContent = "Stable v" + data.version + " · SHA-256: " + data.sha256;
       download.href = "./" + data.apk;
+      download.classList.remove("disabled");
+      download.removeAttribute("aria-disabled");
+      download.removeAttribute("tabindex");
     })
     .catch(() => {
       release.textContent = "Descarga no verificada. Contacta al propietario. / Release unavailable.";

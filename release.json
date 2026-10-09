@@ -1,10 +1,10 @@
-﻿{
+{
     "product":  "Device Commander",
     "platform":  "android",
     "channel":  "stable",
     "version":  "0.3.2",
     "versionCode":  5,
-    "apk":  "DeviceCommander-Android.apk",
+    "apk":  "DeviceCommander-Android-0.3.2.apk",
     "sha256":  "3ed5705053a28dce6c59633beb9ece68cac6be154ac4bacf314fa8639c00350f",
     "signerSha256":  "d63cf1656b937fc70167185e7cdc192cc8265203d7b572c4ad1730b422b5085d"
 }
