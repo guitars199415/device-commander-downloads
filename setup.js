@@ -15,7 +15,7 @@
     const params = uri.searchParams;
     if (!/^wss:\/\//.test(params.get("url") || "")) throw new Error("transport");
     if (!/^[a-f0-9]{64}$/i.test(params.get("pin") || "")) throw new Error("pin");
-    if (!/^[A-Z0-9]{12}$/.test(params.get("code") || "")) throw new Error("code");
+    if (!/^[A-Z0-9]{4}(?:-[A-Z0-9]{4}){2}$/.test(params.get("code") || "")) throw new Error("code");
     const expiration = Date.parse(params.get("expires") || "");
     if (!Number.isFinite(expiration) || expiration <= Date.now() || expiration > Date.now() + 61 * 60000) throw new Error("expired");
     invitation = raw;
