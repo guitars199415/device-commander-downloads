@@ -2,9 +2,9 @@
     "product":  "Device Commander",
     "platform":  "android",
     "channel":  "stable",
-    "version":  "0.3.4",
-    "versionCode":  7,
-    "apk":  "DeviceCommander-Android-0.3.4.apk",
-    "sha256":  "b00731ac998646858b0bf2c60d701c1a92c400a0bd8b2d41f177badca37a2d2b",
+    "version":  "0.3.8",
+    "versionCode":  11,
+    "apk":  "DeviceCommander-Android-0.3.8.apk",
+    "sha256":  "748e5ad3330b11cb433387c5ce703babb457f644c8474b848dbb5374b7bd9c1f",
     "signerSha256":  "d63cf1656b937fc70167185e7cdc192cc8265203d7b572c4ad1730b422b5085d"
 }
